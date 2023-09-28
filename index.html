@@ -4,19 +4,19 @@
         <meta charset="UTF-8">
         <title>Space Stalkers</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="website icon" type="png" href="logoicon.png"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     </head>
     <body>
-        <div class="banner">
-            <video autoplay loop muted plays-inline>
-                <source src="solarsystem.mp4" type="video/mp4">
-            </video>
+        <div data-scroll data-scroll-speed="-5" class="banner">
+            
             <div class="navbar">
                 <img class="logo" href="aboutus.html" src="logoicon.png">
                 <img class="logo1" src="logoname.png">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Information</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="aboutus.html">About</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
@@ -27,7 +27,22 @@
                     <button type="button">Explore</button>
                 </div>
             </div>
+            <video autoplay loop muted plays-inline>
+                <source src="solarsystem.mp4" type="video/mp4">
+            </video>
         </div>
+        <div  class="content1"></div>
+        <div  class="particle">
+            
+            <img class="page2" src="starry-night-sky.jpg">
+        </div>
+        
+        <img class="astronaut" src="astronaut.png">
+        
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>      
     </body>
     <footer>
         <div></div>
