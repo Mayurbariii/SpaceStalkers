@@ -1,50 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Space Stalkers</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="website icon" type="png" href="logoicon.png"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    </head>
-    <body>
-        <div data-scroll data-scroll-speed="-5" class="banner">
-            
-            <div class="navbar">
-                <img class="logo" href="aboutus.html" src="logoicon.png">
-                <img class="logo1" src="logoname.png">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <h1>WELCOME TO </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Stalkers</title>
+    <link rel="website icon" type="png" href="Space Stalkers logo.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/caae9c22e9.js" crossorigin="anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+                <nav>
+                    <!-- Add our Logo-->
+                    <img src="Space Stalkers logo1.png" class="logo">
+                    <img src="Space Stalkers name.png" class="name">
+                    <ul>
+                        <li><a class="home" href="index.html">Home</a></li>
+                        <li><a class="explore" href="explore.html">Explore</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="mission.html">About</a> </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="loginpage.html"> 
+                        <i  class="ri-user-fill"  ></i>
+                    </a>
+                </nav>
+<!-- Common -->        
+        
+           
+            <div class="bottom-page1">
+                <h1>WELCOME TO  <br> </h1>
                 <h2>SPACE TOURISM AGENCY</h2>
-                <div>
-                    <button type="button">Explore</button>
+                <div class="bottom-page1-inner">
+                    
                 </div>
             </div>
-            <video autoplay loop muted plays-inline>
-                <source src="solarsystem.mp4" type="video/mp4">
+            <video src="solarsystem.mp4" autoplay loop muted ></video> 
+        </div>
+        <div id="page2">
+            <h2>Space Tourism Office</h2>
+            <h1>It is a cutting-edge concept that envisions the commercialization of space for tourism and business purposes.<br>
+                Our project explores the possibilities and innovations in this emerging industry. 
+                Imagine a future where individuals and companies can access space for leisure, research, and collaboration.
+            </h1>
+         
+        </div>
+        <div data-scroll data-scroll-speed="-2" id="page3">
+            <video class="rocket-vd" autoplay loop muted>
+                <source src="rocket launch2.mp4" type="video/mp4"/>
+            </video>
+            <div class="right3-center"></div>
+        </div>
+        <div id="page4">
+            <h2 class="txt">Vision</h2>
+            <h1>Our vision is a future where space is not just for astronauts but for every person and bussiness with dreams among the stars. We aspire to create a space tourism industry that is safe, sustainable, and inclusive, offering unparelleled experiences and opportunities beyond Earth's boundaries.</h1>
+        </div>
+        <div id="page5">
+            <video class="page5-vd" autoplay loop muted>
+                <source src="page5-bg2.mp4" type="video/mp4"/>
             </video>
         </div>
-        <div  class="content1"></div>
-        <div  class="particle">
-            
-            <img class="page2" src="starry-night-sky.jpg">
+        <div id="page6">
+            <h2>Mission</h2>
+            <h1>Our mission is to pioneer and promote Space Office Tourism by harnessing cutting-edge technology, sustainable practices, and community engagement.</h1>
         </div>
-        
-        <img class="astronaut" src="astronaut.png">
-        
-        <script src="script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>      
-    </body>
-    <footer>
-        <div></div>
-    </footer>
+        <div id="page7">
+            <div class="page7-cir">
+                <div class="page7-cir-inner"></div>
+            </div>
+            
+        </div>
+        <div id="page8">
+            <div class="page8-bottom">
+                <h1>Space Stalkers</h1>
+                <a href="explore.html" class="button">
+                   <button> Explore</button>
+                </a> 
+            </div>
+            <video src="astronauntmars.mp4"autoplay loop muted></video>
+        </div>
+        <div id="page9">
+            <div class="left9">
+                <h1>Book your <br> Package</h1>
+            </div>
+            <div class="right9">
+                <div class="right9-center">
+                    <video autoplay muted loop src="book-vd.mp4" ></video>
+                </div>
+            </div>
+        </div>
+        <div id="page10">
+            
+            <div class="left10">
+                <a class="arrow-r" href="packages.html" >
+                    <i src="arrow-r.svg" style="color: #ffffff;"></i>
+                </a>
+                <div class="left10-inner">
+                    <a href="packages.html">
+                        <img src="card-moon.jpeg" >
+                    </a>
+                </div>
+                <div class="left10-inner">
+                    <a href="packages.html">
+                        <img src="card-mars.jpg" >
+                    </a>
+                </div>
+                <div class="left10-inner">
+                    <a href="packages.html">
+                        <img src="card-iss2.jpg" >
+                    </a>
+                </div>
+            </div>
+            <div class="right10">
+                <div class="right10-inner">
+                    <h1>Lunar<br> Adventure</h1>
+                    <p>A trip to moon's surface</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>Mars<br> Exploration</h1>
+                    <p>Martian base camp experience</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>Space Station <br>Gateway</h1>
+                    <p>Spacewalk with highly designed suits</p>
+                </div>
+            </div>
+            <div class="here1">
+                <button>Book now</button>
+            </div>
+        </div>
+        <div id="page11">
+            <h1>Missions</h1>
+            <div class="page11-inner">
+                <div class="left11">
+                    <a href="mission.html" >
+                        <img src="https://imgs.search.brave.com/BTUfx5o9Pzqzfe3MGl8mMPXQvg7FCeAkWWoqJGHdgZw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/bHBpLnVzcmEuZWR1/L3B1YmxpY2F0aW9u/cy9uZXdzbGV0dGVy/cy9scGliL25ldy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOC8w/Ny83NDM4X21hcnMt/Y3VyaW9zaXR5LXJv/dmVyLW1zbC1ob3Jp/em9uLXNreS1zZWxm/LXBvcnRyYWl0LXBp/YTE5ODA4LWZ1bGxf/MTIwMHIuanBn" alt="">
+                    </a>
+                </div>
+                <div class="right11">
+                    <h4>November 26, 2011</h4>
+                    <h1>Curiosity mission NASA's Mars Exploration Program</h1>
+
+                </div>
+            </div>
+            <div class="page11-inner">
+                <div class="left11">
+                    <a href="mission.html">
+                        <img src="https://imgs.search.brave.com/Clmmgg3JXyH_hhO5NfWk0_U98V50xR5o4xFp4Q-ptmk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vYS9p/bWcvcmVzaXplL2Y5/NjA1YmI4NGMyMmQ5/MTFlNjEwZGQ1Y2Vl/NmQ3OWMzY2M5Yjdi/MGMvaHViLzIwMjEv/MTIvMDcvOTE3MGUy/YzgtZDY0Ni00ZGJl/LWE4MTQtYmYzY2Fl/YTdlMTgyL2h1YmJs/ZWVhcnRoLmpwZz9h/dXRvPXdlYnAmd2lk/dGg9MTIwMA" alt="">
+                    </a>
+                    </div>
+                <div class="right11">
+                    <h4>April 24, 1990</h4>
+                    <h1>Hubble Space Telescope</h1>
+                    
+                </div>
+            </div>
+            <div class="page11-inner">
+                <div class="left11">
+                   <a href="mission.html">
+                     <img src="https://imgs.search.brave.com/yL5AJoZ2ad_ybGapyH39fOWi-L3bVXnrdVE8QC7CbK4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2YyL2Zj/LzMxL2YyZmMzMWY5/ZTkxMDUzNTc5N2Ey/ZGZiNWJlZmM1MDBm/LmpwZw" alt="">
+                    </a>
+                </div>
+                <div class="right11">
+                    <h4>September 5, 1977</h4>
+                    <h1>Voyager 1</h1>
+            
+                </div>
+            </div>
+          
+        </div>
+        <div id="page12">
+            <div class="page12-inner">
+                <h1>Training</h1>
+                <h2>"Your Odyssey Begins Here: Launch into<br> the Cosmos with Our Space Training Expertise."</h2>
+            </div>
+            <div class="train">
+                <video autoplay loop muted src="training-vd.mp4"></video>
+            </div>
+        </div>
+        <div id="page13">
+            <h1>Book your
+                <br>
+                Training slot</h1>
+                <button>BOOK A DEMO</button>
+        </div>
+        <div id="page14">
+            <div class="page14-inner">
+                <h1>Twitter</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14-inner">
+                <h1>LinkedIn</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+
+            </div>
+            <div class="page14-inner">
+                <h1>Instagram</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+
+</body>
 </html>

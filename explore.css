@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #main{
+      position: relative;
+      overflow: hidden;
+      background-color: #142533;
+  }
+  @font-face {
+      font-family: a;
+      src: url(./jost-variable.ttf);
+  }
+  @font-face {
+      font-family: b;
+      src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+  }
+  @font-face {
+      font-family: c;
+      src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+  }
+  #page1
+  {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+  }
+
+  #page1>video{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+#page1>.nav{
+    position: fixed;
+  }
+nav{
+    background: #0d0c0f;
+    width: 100%;
+    height: auto;
+    padding: 10px 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    width: 50px;
+    height: 45px;
+}
+
+.name{
+    width: auto;
+    height: 50px;
+    padding-left: 10px;
+}
+.ri-user-fill{
+    background-color: #e4f4e4;
+    color: #5fcb4b;
+    border-radius: 50%;
+    padding: 10px 10px;
+    font-size: larger;
+}
+.ri-user-fill:hover{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 10px 10px;
+    background-color: #5fcb4b;
+    border: #171616;
+    color: #e4f4e4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: #3a3838;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a .exp{
+    padding: 7px 15px;
+    background-color: #ededed;
+    color: rgb(17, 15, 9);
+    border: #171616;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+
+
+nav ul li a:hover{
+    
+    padding: 7px 15px;
+    background-color: #ededed;
+    color: rgb(17, 15, 9);
+    border: #171616;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    
+}
+ 
