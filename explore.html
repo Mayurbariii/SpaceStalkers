@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Stalkers</title>
+    <link rel="stylesheet" href="explore.css">
     <link rel="website icon" type="png" href="Space Stalkers logo.png"/>
-    <link rel="html" href="explore.html">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,32 +13,193 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="main">
-        <div data-scroll data-scroll-speed="-5" id="page1">
-            
-                <nav>
-                    <!-- Add our Logo-->
-                    <img src="Space Stalkers logo1.png" class="logo">
-                    <img src="Space Stalkers name.png" class="name">
-                    <ul>
-                        <li><a class="#" href="index.html">Home</a></li>
-                        <li><a class="exp" href="explore.html">Explore</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="mission.html">About</a> </li>
-                        <li><a href="contact.html" class="contact">Contact</a></li>
-                    </ul>
-                    <a href="loginpage.html"> 
-                        <i  class="ri-user-fill" ></i>
+    <div data-scroll data-scroll-speed="-5" id="page1">
+        <nav>
+            <!-- Add our Logo-->
+            <img src="Space Stalkers logo1.png" class="logo">
+            <img src="Space Stalkers name.png" class="name">
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="explore" href="explore.html">Explore</a></li>
+                <li><a class="info" href="infopage.html">Info</a></li>
+                <li><a class="about" href="about.html">About</a> </li>
+                <li><a class="contact" href="contact.html" >Contact</a></li>
+            </ul>
+            <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
+       
+            <!--<a href="loginpage.html"> 
+                <i  class="ri-user-fill" ></i> 
+            </a> -->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <a href="nav.html" class="sub-menu-link">
+                        <i class="ri-login-box-fill"></i>
+                        <p>Login</p>
+                        <span>></span>
                     </a>
-                </nav>
+    
+                    <a href="mission.html" class="sub-menu-link">
+                        <i class="ri-rocket-2-fill"></i>
+                        <p>Missions</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-suitcase-3-fill"></i>
+                        <p>Packages</p>
+                        <span>></span>
+                    </a>
+                    
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-questionnaire-fill"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>  
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-presentation-fill"></i>
+                        <p>Training</p>
+                        <span>></span>
+                    </a> 
+                </div>
+            </div>
+    </nav>
+    </div> 
+    
+    
+    
+    <div class="page1-bg">
+            <img src="explore-bg1.jpg">
+            <h1 class="explore">Explore</h1>
+            <h2 class="packages">Packages</h2>
+     </div>
 
-<!-- Common -->
+        
+        <div class="page2">
+            <a class="arrow-r" href="packages.html" >
+                <i src="arrow-r.svg" style="color: #ffffff;"></i>
+            </a>
+            <div class="page2-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="card-moon.jpeg" >
+                </a>
+               
+            </div>
             
-          
+            <div class="page2-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="card-mars.jpg" >
+                </a>
+                
+            </div>
+            <div class="page2-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="card-iss2.jpg" >
+                </a>
+                
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+                    
+        </div>
+
+        <div class="page2-inner">
+            <div class="page2-text1">
+                <div class="here1">
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <button >More</button>
+                    </a>
+                </div>
+                <h1>Lunar<br> Adventure</h1>
+                <p>A trip to moon's surface<br>Moon walking in specially designed suits<br>Astronomy stargazing opportunities from moon's surface<br>Lunar base visits</p>
+            </div>
+            <div class="page2-text1">
+                <div class="here1">
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                        <button >More</button>
+                    </a>
+                </div>
+                <h1>Mars<br> Exploration</h1>
+                <p>Orbital tour around Mars<br>Martian base camp experience<br>Rover tour to explore Martian landscape<br>Workshops on Mars colonization & sustaibility</p>
+            </div>
+            <div class="page2-text1">
+                <div class="here1">
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                        <button >More</button>
+                        </a>
+                </div>
+                <h1>Space Station <br>Gateway</h1>
+                <p>Spacewalk with highly designed suits<br>Commercial stay at Space Station<br>Earth observation & photography in Space Station & technology</p>
+            </div>
+        </div>
+
+        <div class="page3">
+            <a class="arrow-r" href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link" >
+                <i src="arrow-r.svg" style="color: #ffffff;"></i>
+            </a>
+            <div class="page3-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="card-asteroid2.jpg" >
+                </a>
+            </div>
+            <div class="page3-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="https://media.istockphoto.com/id/1203341695/photo/artist-view-of-the-saturns-moon-titan.jpg?s=612x612&w=0&k=20&c=Z9ajVfN1hXgP6p40NwGO3n6jGjEyiwooLkENv9VNIos=" >
+                </a>
+            </div>
+            <div class="page3-card1">
+                <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                    <img src="card-solarsystem1.jpg" >
+                </a>
+            </div>
+
+        
+        </div>
+
+        <div class="page3-inner">
+            <div class="page3-text1">
+                <div class="here1" >
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                        <button >More</button>
+                        </a>
+                </div>
+                <h1>Asteroid<br> Mining Excursion</h1>
+                <p>Journey to a nearby asteroid<br>Mining and resource extraction simulations<br>Study of asteroid composition and potential resources<br>Space survival training</p>
+            </div>
+            <div class="page3-text1">
+                <div class="here1">
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                        <button >More</button>
+                        </a>
+                </div>
+                <h1>Titan <br> Explorer</h1>
+                <p>Titan Landing and Surface Exploration<br>Rover Ride through Icy Plains<br>Underground Ice Caves Excursion<br>Titanian Sunset Viewing<br>Stargazing and Astrophotography</p>
+            </div>
+            <div class="page3-text1">
+                <div class="here1">
+                    <a href="https://docs.google.com/document/d/1IGnQC6Fhg6x6Y7we3lwhSQ8_CoSfTTf5EF1L6WpHKHY/edit?usp=drive_link">
+                        <button >More</button>
+                        </a>
+                </div>
+                <h1>Solar System  <br>Grand Tour</h1>
+                <p>An extended journey through our solar system<br>Stops at multiple planets, moons, and asteroids<br>In-depth exploration with expert guides</p>
+            </div>
+        </div>
+        <div class="page2-bg">
+
+        </div>
+        <div class="page3-bg">
+
+        </div>
+    
+        <div class="page4">
+            
+        </div>
+    
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        
+        function togglemenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+        </script> 
 </body>
 </html>

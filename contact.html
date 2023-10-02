@@ -19,19 +19,48 @@
         <img src="Space Stalkers name.png" class="name">
         <ul>
             <li><a class="home" href="index.html">Home</a></li>
-            <li><a class="explore" href="#">Explore</a></li>
-            <li><a href="#">Info</a></li>
-            <li><a href="mission.html">About</a> </li>
-            <li><a href="contact.html" class="contact">Contact</a></li>
+            <li><a class="explore" href="explore.html">Explore</a></li>
+            <li><a class="info" href="infopage.html">Info</a></li>
+            <li><a class="about" href="about.html">About</a> </li>
+            <li><a class="contact" href="contact.html" >Contact</a></li>
         </ul>
-        <a href="loginpage.html"> 
-            <i  class="ri-user-fill" ></i> 
-        </a>
+        <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
+       
+        
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="loginpage.html" class="sub-menu-link">
+                    <i class="ri-login-box-fill"></i>
+                    <p>Login</p>
+                    <span>></span>
+                </a>
+
+                <a href="mission.html" class="sub-menu-link">
+                    <i class="ri-rocket-2-fill"></i>
+                    <p>Missions</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-suitcase-3-fill"></i>
+                    <p>Packages</p>
+                    <span>></span>
+                </a>
+                
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-questionnaire-fill"></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>  
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-presentation-fill"></i>
+                    <p>Training</p>
+                    <span>></span>
+                </a> 
+            </div>
+        </div>
     </nav>
     <div class="text">
-        <h4>GET IN TOUCH</h4><br><br>
-        <h1>CONTACT US</h1><br><br><br>
-        <h4>Embark on a journey beyond imagination.<br>Explore the wonders of space with us.</h4>
+       
         </div>
         <h5 class="text1">Moscow, Russia</h5>
         <h5 class="text2">Washington DC, USA</h5>
@@ -50,9 +79,45 @@
             <h3>Abhishek Jamdhale</h3>
             <h3>Nishant Gour</h3>
         </div>
-    <img src="space2.jpg" class="space">
-      
+    <img src="space3.jpg" class="space">
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        
+        function togglemenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+    </script>
         
 </div>
 </body>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Contact Us</h3>
+            <p>Email: hellospacestalkers@gmail.com</p>
+            <!--<p>Phone: +123-456-7890</p>-->
+        </div>
+        <div class="footer-center">
+            <h3>Follow Us</h3>
+            <a href="https://youtube.com/@SpaceStalkers?si=QTbRvQWU9hfxzXHZ" class="social-icon">Youtube</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <div class="footer-right">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="explore.html">Training</a></li>
+                <li><a href="infopage.html">Information</a></li>
+                <li><a href="mission.html">Missions</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">© 2023 Space Tourism Office. All rights reserved.</p>
+</footer>
 </html>

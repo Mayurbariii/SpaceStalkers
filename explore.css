@@ -3,45 +3,15 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
   }
   html,
   body {
     height: 100%;
     width: 100%;
   }
-  #main{
-      position: relative;
-      overflow: hidden;
-      background-color: #142533;
-  }
-  @font-face {
-      font-family: a;
-      src: url(./jost-variable.ttf);
-  }
-  @font-face {
-      font-family: b;
-      src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
-  }
-  @font-face {
-      font-family: c;
-      src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
-  }
-  #page1
-  {
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-  }
 
-  #page1>video{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
-#page1>.nav{
-    position: fixed;
-  }
-nav{
+  #page1>nav{
     background: #0d0c0f;
     width: 100%;
     height: auto;
@@ -50,7 +20,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     backdrop-filter: blur(10px);
 }
 
@@ -60,29 +30,26 @@ nav{
 }
 
 .name{
-    width: auto;
     height: 50px;
     padding-left: 10px;
 }
-.ri-user-fill{
-    background-color: #e4f4e4;
-    color: #5fcb4b;
-    border-radius: 50%;
-    padding: 10px 10px;
-    font-size: larger;
+
+.user-pic{
+    padding: 9px 9px;
+    border-radius: 40px;
+    background-color: #5fcb4b;
 }
-.ri-user-fill:hover{
+
+.user-pic:hover{
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
     margin-left: 30px;
     padding: 10px 10px;
-    background-color: #5fcb4b;
+    background-color: white;
     border: #171616;
-    color: #e4f4e4;
     border-radius: 50px;
-    cursor: pointer;
-    transition: #3a3838;
+    color: #5fcb4b;
 }
 
 nav ul{
@@ -96,25 +63,361 @@ nav ul li{
     margin: 10px 20px;
 }
 
-nav ul li a .exp{
-    padding: 7px 15px;
-    background-color: #ededed;
-    color: rgb(17, 15, 9);
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li .explore{
+    padding: 9px 25px;
+    background-color: #3a3838;
     border: #171616;
     border-radius: 50px;
-    letter-spacing: 2px;
+    cursor: pointer;
+    transition: #3a3838;
 }
-
-
-
 nav ul li a:hover{
-    
-    padding: 7px 15px;
-    background-color: #ededed;
-    color: rgb(17, 15, 9);
+    padding: 9px 25px;
+    background-color: #3a3838;
     border: #171616;
     border-radius: 50px;
-    letter-spacing: 2px;
+    cursor: pointer;
+    transition: #3a3838;
+}
+
+/*a.contact{
+    padding: 9px 25px;
+    background-color: #3a3838;
+    border: #171616;
+    border-radius: 50px;
+}*/
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 75%;
+    right: 0%;
+    width: 15%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+   
+    z-index: 1;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 450%;
+
+    z-index: 1;
+}
+
+.sub-menu{
+    background-color: #e5e5e5;
+    padding: 5%;
+    margin: 10px;
+    z-index: 1;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 5px 0;
+    z-index: 1;
+}
+
+.sub-menu-link p{
+    width: 100%;
+    z-index: 1;
+}
+
+.sub-menu-link i{
+    width: 18%;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    z-index: 1;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover {
+    font-weight: 600;
+}
+.page1-bg img{
+    height: 100%;
+    width: 100%;
     
 }
- 
+.page1-bg .explore{
+    position: absolute;
+    color: #f3c040;
+    z-index: 5;
+    margin-top: -55%;
+    margin-left: 41%;
+    font-size: 3vw;
+    letter-spacing: 8px;
+}
+.page1-bg .packages{
+    position: absolute;
+    color: #fccd56;
+    z-index: 5;
+    margin-top: -15%;
+    margin-left: 41%;
+    font-size: 3vw;
+    letter-spacing: 10px;
+}
+
+
+.page2-bg{
+    background-color: #06080a;
+    position: relative;
+    width: 100%;
+    height: 300%;
+    margin-top: -5%;
+}
+.page2{
+    position: absolute;
+    padding: 0px 0px 0px 20px;
+    width: 85%;
+    height: 50vw;
+    margin-top: -15%;
+    margin-left: 8%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(50, 57, 63);
+    z-index: 1;
+}
+
+.page2 h1{
+    color:#f3c040;
+    letter-spacing: 4px;
+    margin-top: -50%;
+    margin-left: 0%;
+    font-size: 3vw;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.page2{
+    position: absolute;
+      height: 100%;
+      width: 90%;
+     
+      margin-top: -10%;
+      margin-left: 5%;
+      size: 30vw;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      
+      background-color: #142533;
+      z-index: 1;
+  }
+  
+  .page2-card1{
+    height: 50%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -20%;
+    size: 30vw;
+    justify-content: space-between;
+    padding: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .page2-card1:hover{
+    height: 55%;
+    width: 115%;
+  }
+  .page2-card1>a>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    size: 3vw;
+    margin-right: 5%;
+    border-radius: 10px;
+  }
+  .page2->a>img:hover{
+    height: 105%;
+    width: 105%;
+  }
+
+
+  .page2-inner .page2-text1 a button{
+    margin-top: 10%;
+    margin-left: 50%;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    color: #0a3cce;
+    transform: .2s linear;
+    font-size: medium;
+    z-index: 2;
+}
+.page2-inner .page2-text1 a button:hover{
+  transform: translateX(5px);
+  transition:.6s ease all ;
+  letter-spacing: 2px;
+  color:#e6b436;
+  font-size: large;
+  cursor: pointer;
+}
+
+.page2-inner{
+    height: auto;
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+    margin-left: 10%;
+    margin-top: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2-text1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-family: a;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+.page2-text1>h1{
+    font-size: 2vw;
+    color:wheat;
+    margin-left: 0%;
+    
+}
+.page2-text1>p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    width: 80%;
+    
+}
+
+/*-----repeat-----*/
+
+.page3{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 50vw;
+    margin-top: 39%;
+    margin-left: 5%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color:#142533;
+    z-index: 1;
+}
+
+  .page3-card1{
+    height: 50%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -20%;
+    size: 30vw;
+    justify-content: space-between;
+    padding: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .page3-card1:hover{
+    height: 55%;
+    width: 115%;
+  }
+  .page3-card1>a>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    size: 3vw;
+    margin-right: 5%;
+    border-radius: 10px;
+  }
+.page3-card>a>img:hover{
+    height: 105%;
+    width: 105%;
+  }
+
+
+.page3-inner{
+    height: auto;
+    width: 90%;
+    position: absolute;
+    
+    margin-left: 10%;
+    margin-top: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page3-text1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-family: a;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+.page3-text1>h1{
+    font-size: 2vw;
+    color:wheat;
+    margin-left: 0%;
+    
+}
+.page3-text1>p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    width: 80%;
+    
+}
+.page3-inner .page3-text1 button{
+    margin-top: 10%;
+    margin-left: 50%;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    color: #0a3cce;
+    transform: .2s linear;
+    font-size: medium;
+    z-index: 2;
+}
+.page3-inner .page3-text1 button:hover{
+  transform: translateX(5px);
+  transition:.6s ease all ;
+  letter-spacing: 2px;
+  color:#e6b436;
+  font-size: large;
+  cursor: pointer;
+}
+
+/*----- Page 3-------*/
+
+.page3-bg{
+    background-color: #06080a;
+    position: relative;
+    width: 100%;
+    height: 300%;
+    margin-top: -5%;
+}
+

@@ -11,7 +11,7 @@
     width: 100%;
   }
 
-#page1>nav{
+  #page1>nav{
     background: #0d0c0f;
     width: 100%;
     height: auto;
@@ -67,7 +67,14 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
 }
-
+nav ul li .about{
+    padding: 9px 25px;
+    background-color: #3a3838;
+    border: #171616;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: #3a3838;
+}
 nav ul li a:hover{
     padding: 9px 25px;
     background-color: #3a3838;
@@ -76,6 +83,8 @@ nav ul li a:hover{
     cursor: pointer;
     transition: #3a3838;
 }
+
+
 
 /*a.contact{
     padding: 9px 25px;
@@ -93,16 +102,20 @@ nav ul li a:hover{
     overflow: hidden;
     transition: max-height .5s;
     
+    z-index: 1;
 }
 
 .sub-menu-wrap.open-menu{
     max-height: 450%;
+    
+    z-index: 1;
 }
 
 .sub-menu{
-    background: #fff;
+    background-color: #e5e5e5;
     padding: 5%;
     margin: 10px;
+    z-index: 1;
 }
 
 .sub-menu-link{
@@ -111,15 +124,17 @@ nav ul li a:hover{
     text-decoration: none;
     color: #525252;
     margin: 5px 0;
+    z-index: 1;
 }
 
 .sub-menu-link p{
     width: 100%;
+    z-index: 1;
 }
 
 .sub-menu-link i{
     width: 18%;
-    
+    background: #e5e5e5;
     border-radius: 50%;
     padding: 8px;
     margin-right: 15px;
@@ -127,6 +142,7 @@ nav ul li a:hover{
 
 .sub-menu-link span{
     font-size: 22px;
+    z-index: 1;
 }
 
 .sub-menu-link:hover span{
@@ -136,6 +152,7 @@ nav ul li a:hover{
 .sub-menu-link:hover {
     font-weight: 600;
 }
+
 
 .page1-bg img{
     height: 100%;
@@ -153,7 +170,6 @@ nav ul li a:hover{
 .page2{
     position: absolute;
     padding: 0px 0px 0px 20px;
-    border-radius: 2%;
     width: 80%;
     height: 50vw;
     margin-top: -35%;
@@ -164,22 +180,13 @@ nav ul li a:hover{
     z-index: 1;
 }
 
-.james{
-    width: 39%;
-    border-radius: 5%;
-    margin-left: 59.5%;
-    margin-top: 1.5%;
-}
-
 .page2 h1{
     color:#e6b436;
     letter-spacing: 4px;
-    margin-top: -25%;
-    margin-left: 1.8%;
-    font-size: 2vw;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 3vw;
 }
-
-
 
 .page2 p{
     color:white;
@@ -200,9 +207,7 @@ nav ul li a:hover{
 
 .page3{
     position: absolute;
-    
     padding: 0px 0px 0px 20px;
-    border-radius: 2%;
     width: 80%;
     height: 39vw;
     margin-top: -35%;
@@ -213,30 +218,21 @@ nav ul li a:hover{
     z-index: 1;
 }
 
-.hubble{
-    width: 39%;
-    border-radius: 5%;
-    margin-left: 59.5%;
-    margin-top: 1.5%;
-}
-
 .page3 h1{
     color:#e6b436;
     letter-spacing: 4px;
-    margin-top: -21%;
-    margin-left: 1.8%;
-    font-size: 2.5vw;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 3vw;
 }
 
-.page3 p{
-    color:white;
-    letter-spacing: 2px;
-    margin-top: 6%;
-    margin-left: 2%;
-    margin-right: 2%;
+.page3 ul{
+    color: white;
+    letter-spacing: 4px;
+    margin-top: 5%;
+    margin-left: 10%;
     font-size: 2vw;
 }
-
 
 .page4-bg{
     background-color: #06080a;
@@ -249,7 +245,6 @@ nav ul li a:hover{
 .page4{
     position: absolute;
     padding: 0px 0px 0px 20px;
-    border-radius: 2%;
     width: 80%;
     height: 50vw;
     margin-top: -35%;
@@ -260,26 +255,10 @@ nav ul li a:hover{
     z-index: 1;
 }
 
-.sputnic{
-    width: 39%;
-    border-radius: 5%;
-    margin-left: 59.5%;
-    margin-top: 1.5%;
-}
-
 .page4 h1{
     color:#e6b436;
     letter-spacing: 4px;
-    margin-top: -21%;
-    margin-left: 1.8%;
-    font-size: 2.5vw;
-}
-
-.page4 p{
-    color:white;
-    letter-spacing: 2px;
-    margin-top: 6%;
+    margin-top: 1%;
     margin-left: 2%;
-    margin-right: 2%;
-    font-size: 2vw;
+   font-size: 3vw;
 }

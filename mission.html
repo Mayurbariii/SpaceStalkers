@@ -6,40 +6,115 @@
     <title>Space Stalkers</title>
     <link rel="stylesheet" href="mission.css">
     <link rel="website icon" type="png" href="Space Stalkers logo.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/caae9c22e9.js" crossorigin="anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page1">
+    <div data-scroll data-scroll-speed="-5" id="page1">
         <nav>
             <!-- Add our Logo-->
             <img src="Space Stalkers logo1.png" class="logo">
             <img src="Space Stalkers name.png" class="name">
             <ul>
                 <li><a class="home" href="index.html">Home</a></li>
-                <li><a class="explore" href="#">Explore</a></li>
-                <li><a href="#">Info</a></li>
+                <li><a class="explore" href="explore.html">Explore</a></li>
+                <li><a class="info" href="infopage.html">Info</a></li>
                 <li><a class="about" href="mission.html">About</a> </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
             </ul>
-            <a href="loginpage.html"> 
-                <i  class="ri-user-fill"  ></i>
-            </a>
-        </nav>
+            <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
+       
+        
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="loginpage.html" class="sub-menu-link">
+                    <i class="ri-login-box-fill"></i>
+                    <p>Login</p>
+                    <span>></span>
+                </a>
+
+                <a href="mission.html" class="sub-menu-link">
+                    <i class="ri-rocket-2-fill"></i>
+                    <p>Missions</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-suitcase-3-fill"></i>
+                    <p>Packages</p>
+                    <span>></span>
+                </a>
+                
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-questionnaire-fill"></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>  
+                <a href="#" class="sub-menu-link">
+                    <i class="ri-presentation-fill"></i>
+                    <p>Training</p>
+                    <span>></span>
+                </a> 
+            </div>
+        </div>
+</nav> 
+            
+         
         <div class="page1-bg">
-            <img src="page1-bg1.jpg">
+            <img src="about1.jpg">
         </div>
         <div class="page2">
-            <h1>Missions</h2>
+            <img src="james.jpg" class="james">
+            <h1>James Web Space Telescope </h1>
+            <p>
+                The James Webb Space Telescope (JWST) <br>is a powerful space observatory slated to <br>launch on December 18, 2021. Positioned <br>at the second Lagrange point, JWST boasts<br> a 6.5-meter mirror for infrared observations,<br> enabling groundbreaking studies of distant galaxies, star formation, and exoplanet atmospheres. Equipped with international collaboration from NASA, ESA, and CSA, JWST's tennis court-sized sunshield shields its instruments from the Sun, Earth, and Moon, ensuring accurate and advanced astronomical observations.
+            </p>
         </div>
         <div class="page2-bg">
 
         </div>
-       
-    
+
+        <div class="page3">
+            <img src="hubble.jpg" class="hubble">
+            <h1>Hubble Space Telescope</h1>
+            <p>
+                The Hubble Space Telescope (HST) was<br> launched in 1990 to capture high-resolution<br> images of space. It orbits Earth, avoiding<br> atmospheric interference. Hubble has made groundbreaking discoveries, like measuring the universe's expansion rate. It's been serviced to extend its life. Its iconic images have popularized astronomy. Hubble remains in operation, with its successor, the James Webb Space Telescope, on the horizon.
+            </p>
+        </div>
+        <div class="page3-bg">
+
+        </div>
+        <div class="page4">
+            <img src="sputnic.jpg" class="sputnic">
+            <h1>Sputnic 1</h1>
+            <p>
+                Sputnik 1, launched in 1957, was the first,<br> artificial satellite, marking the start of the<br> space age. It was a small sphere with radio<br> signals, its launch initiated the space race<br> between the United States and the Soviet Union. It reentered Earth's atmosphere and burned up after three months in orbit.
+            </p>
+        </div>
+        <div class="page4-bg">
+
+        </div>
+       <!-- <div class="page5">
+            <img src="voyager.jpg" class="voyager">
+            <h1>Voyager 1</h1>
+            <p>
+                Launched in 1977, Voyager 1's primary mission was to explore Jupiter and Saturn. It sent back stunning images and data about these planets and their moons. Afterward, it ventured into interstellar space, becoming the farthest human-made object from Earth, continuing to send data about its journey.
+            </p>
+        </div>
+        <div class="page5-bg">
+
+        </div> -->
     </div>
+     
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        
+        function togglemenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+        </script>
+
 </body>
 </html>

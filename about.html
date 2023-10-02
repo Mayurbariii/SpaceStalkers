@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Stalkers</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="website icon" type="png" href="Space Stalkers logo.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div data-scroll data-scroll-speed="-5" id="page1">
+        <nav>
+            <!-- Add our Logo-->
+            <img src="Space Stalkers logo1.png" class="logo">
+            <img src="Space Stalkers name.png" class="name">
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="explore" href="explore.html">Explore</a></li>
+                <li><a class="info" href="infopage.html">Info</a></li>
+                <li><a class="about" href="about.html">About</a> </li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
+            <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
+       
+            <!--<a href="loginpage.html"> 
+                <i  class="ri-user-fill" ></i> 
+            </a> -->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <a href="nav.html" class="sub-menu-link">
+                        <i class="ri-login-box-fill"></i>
+                        <p>Login</p>
+                        <span>></span>
+                    </a>
+    
+                    <a href="mission.html" class="sub-menu-link">
+                        <i class="ri-rocket-2-fill"></i>
+                        <p>Missions</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-suitcase-3-fill"></i>
+                        <p>Packages</p>
+                        <span>></span>
+                    </a>
+                    
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-questionnaire-fill"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>  
+                    <a href="#" class="sub-menu-link">
+                        <i class="ri-presentation-fill"></i>
+                        <p>Training</p>
+                        <span>></span>
+                    </a> 
+                </div>
+            </div>
+</nav> 
+            
+            <a href="loginpage.html"> 
+                <i  class="ri-user-fill"  ></i>
+            </a>
+        <div class="page1-bg">
+            <img src="about1.jpg">
+        </div>
+        <div class="page2">
+            <h1>Our Company</h1>
+            <p>
+                Founded in 2023, [Space Stalkers] is a leading space tourism agency
+                dedicated to providing transformative and safe space travel experiences.<br><br>Our mission is to
+                make space accessible to everyone, fostering a new era of space exploration and
+                understanding.<br><br>
+                We are not just a company; we are the gateway to the cosmos, offering a visually stunning and unforgettable space travel experience.
+            </p>
+        </div>
+        <div class="page2-bg">
+
+        </div>
+
+        <div class="page3">
+            <h1>Our Team</h1>
+            <ul>
+                <li><h3>Mayur Bari</h3></h2></li>
+                <li><h3>Purva Londhe</h3></li>
+                <li><h3>Siddesh Sapate</h3></li>
+                <li><h3>Abhishek Jamdhade</h3></li>
+                <li><h3>Riya Mahajan</h3></li>
+                <li><h3>Nishant Gour</h3></li>
+            </ul>
+        </div>
+        <div class="page3-bg">
+
+        </div>
+
+        <div class="page4">
+            <h1>Our Office</h1>
+        </div>
+        <div class="page4-bg">
+
+        </div>
+    </div>
+     
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        
+        function togglemenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+        </script>
+
+</body>
+</html>
