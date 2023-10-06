@@ -16,56 +16,23 @@
     <div id="main">
         <div data-scroll data-scroll-speed="-5" id="page1">
                 <nav>
-                    <!-- Add our Logo-->
-                    <a href="about.html">
+                <!-- Add our Logo-->
+                <a href="about.html">
                     <img src="Space Stalkers logo1.png" class="logo">
                     </a>
                     <a href="about.html">
                     <img src="Space Stalkers name.png" class="name">
                     </a>
-                    <ul>
-                        <li><a class="home" href="index.html">Home</a></li>
-                        <li><a class="explore" href="explore.html">Explore</a></li>
-                        <li><a class="info" href="infopage.html">Info</a></li>
-                        <li><a class="about" href="about.html">About</a> </li>
-                        <li><a class="contact" href="contact.html" >Contact</a></li>
-                    </ul>
-                    <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
-       
-                    <!--<a href="loginpage.html"> 
-                        <i  class="ri-user-fill" ></i> 
-                    </a> -->
-                    <div class="sub-menu-wrap" id="subMenu">
-                        <div class="sub-menu">
-                            <a href="nav.html" class="sub-menu-link">
-                                <i class="ri-login-box-fill"></i>
-                                <p>Login</p>
-                                <span>></span>
-                            </a>
-            
-                            <a href="mission.html" class="sub-menu-link">
-                                <i class="ri-rocket-2-fill"></i>
-                                <p>Missions</p>
-                                <span>></span>
-                            </a>
-                            <a href="#" class="sub-menu-link">
-                                <i class="ri-suitcase-3-fill"></i>
-                                <p>Packages</p>
-                                <span>></span>
-                            </a>
-                            
-                            <a href="#" class="sub-menu-link">
-                                <i class="ri-questionnaire-fill"></i>
-                                <p>Help & Support</p>
-                                <span>></span>
-                            </a>  
-                            <a href="#" class="sub-menu-link">
-                                <i class="ri-presentation-fill"></i>
-                                <p>Training</p>
-                                <span>></span>
-                            </a> 
-                        </div>
-                    </div>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a class="explore" href="explore.html">Explore</a></li>
+            <li><a class="info" href="infopage.html">Info</a></li>
+            <li><a class="about" href="about.html">About</a> </li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="loginpage.html">
+        <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
+        </a>
                 </nav>
 <!-- Common -->        
         
@@ -107,6 +74,7 @@
             <h1>Our mission is to pioneer and promote Space Office Tourism by harnessing cutting-edge technology, sustainable practices, and community engagement.</h1>
         </div>
         <div id="page7">
+            <h1>Collaboration with</h1>
             <div class="page7-cir">
                 <div class="page7-cir-inner"></div>
             </div>
@@ -170,7 +138,35 @@
             <div class="here1">
                 <button>Book now</button>
             </div>
+            
+            <div class="viewbox">
+                
+                <div id="testimonials" >
+                    
+                    <div class="user">
+                        <img src="user2.jpg" alt="profile1" >
+                        <p>An otherworldly odyssey! The journey with Space Stalkers was beyond imagination. Mars, Jupiter, Saturn—I felt like an explorer of the cosmos. The team’s attention to detail and safety made this space adventure not only thrilling but also remarkably serene. A celestial masterpiece!</p>
+                        <h3>John A.</h3>
+                    </div>
+                    <div class="user space">
+                        <img src="user3.jpg" alt="profile2" >
+                        <p>Booking with Space Stalkers was the best decision of my life. Floating in microgravity, gazing at Earth from orbit—indescribable. The personalized stargazing experience on Titan was like a dream. This isn’t just a trip; it's a transformative experience into the cosmic unknown</p>
+                        <h3>Astrid M.</h3>
+                    </div>
+                    <div class="user">
+                        <img src="user4.jpg" alt="profile3" >
+                        <p>Embarking on this space journey with Space Stalkers was a pivotal moment. From simulated gravity on Mars to zero gravity dance parties, every moment was meticulously planned. The educational workshops inspired me to pursue a career in astrophysics. An adventure that fuels both curiosity and dreams.</p>
+                        <h3>Elena R.</h3>
+                    </div>
+                </div>
+                <div class="controls">
+                    <span id="control1"></span>
+                    <span id="control2" class="active"></span>
+                    <span id="control3"></span>
+                </div>
+            </div>
         </div>
+        <h2 class="reviews">Customer Reviews</h2>
         <div id="page11">
             <h1>Achieved Missions</h1>
             <div class="page11-inner">
@@ -224,7 +220,9 @@
             <h1>Book your
                 <br>
                 Training slot</h1>
-                <button href="infopage.html">BOOK A DEMO</button>
+                <a href="infopage.html">
+                    <button >BOOK A DEMO</button>
+                </a>
         </div>
         <div id="page14">
             <div class="page14-inner">
@@ -251,6 +249,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    
+    <script>
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+
+    </script>
+    
     <script>
         let subMenu = document.getElementById("subMenu");
         

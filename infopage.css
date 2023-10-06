@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belanosima&family=Farro&family=Hammersmith+One&family=Inter&family=Josefin+Sans&family=Jost&family=Julius+Sans+One&family=Marcellus+SC&family=Montserrat&family=Playfair+Display&family=Poppins&family=Roboto&family=Syncopate&family=Unbounded&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    background: #0d0c0f;
+    width: 100%;
+    height: auto;
+    padding: 10px 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+a .logo{
+    width: 40px;
+    height: 45px;
+}
+
+a .name{
+    height: 50px;
+    padding-left: 10px;
+}
+
+.user-pic{
+    padding: 9px 9px;
+    border-radius: 40px;
+    background-color: #5fcb4b;
+}
+
+.user-pic:hover{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 10px 10px;
+    background-color: white;
+    border: #171616;
+    border-radius: 50px;
+    color: #5fcb4b;
+    transition: 0.6s;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    padding: 9px 25px;
+    background-color: #3a3838;
+    border: #171616;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: #3a3838;
+}
+
+a.info{
+    padding: 9px 25px;
+    background-color: #3a3838;
+    border: #171616;
+    border-radius: 50px;
+}
+
+.text{
+    margin-top: 4%;
+    height: 100vh;
+    width: 100%;
+    letter-spacing: 5px;
+    color: #ededed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+.bg-image img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.info_text h1{
+    position: absolute;
+    color: rgb(255, 212, 72);
+    margin-top: 17%;
+    margin-left: 36.8%;
+    font-size: 5vw;
+    z-index: 1;
+}
+
+.image1 img{
+    width: 100%;
+    z-index: -2;
+}
+
+.text h1{
+    text-align: start;
+    margin-left: 52.5%;
+    margin-top: 6%;
+    letter-spacing: 8px;
+    font-size: 5.2vw;
+}
+
+.text hr{
+    margin-left: 53%;
+    margin-right: 13%;
+    margin-top: 2%;
+    color: white;
+    z-index: -1;
+}
+
+.text1 p{
+    margin-left: 53%;
+    text-align: start;
+    position: absolute;
+    margin-right: 10%;
+    margin-top: 21%;
+    color: white;
+    font-size: 2vw;
+}

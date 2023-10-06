@@ -11,7 +11,7 @@
     width: 100%;
   }
 
-  #page1>nav{
+#page1>nav{
     background: #0d0c0f;
     width: 100%;
     height: auto;
@@ -24,12 +24,12 @@
     backdrop-filter: blur(10px);
 }
 
-.logo{
-    width: 50px;
+a .logo{
+    width: 40px;
     height: 45px;
 }
 
-.name{
+a .name{
     height: 50px;
     padding-left: 10px;
 }
@@ -50,6 +50,7 @@
     border: #171616;
     border-radius: 50px;
     color: #5fcb4b;
+    transition: 0.6s;
 }
 
 nav ul{
@@ -61,20 +62,15 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 1s;
 }
-nav ul li .about{
-    padding: 9px 25px;
-    background-color: #3a3838;
-    border: #171616;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: #3a3838;
-}
+
 nav ul li a:hover{
     padding: 9px 25px;
     background-color: #3a3838;
@@ -84,38 +80,32 @@ nav ul li a:hover{
     transition: #3a3838;
 }
 
-
-
-/*a.contact{
+a.about{
     padding: 9px 25px;
     background-color: #3a3838;
     border: #171616;
     border-radius: 50px;
-}*/
+}
 
 .sub-menu-wrap{
     position: absolute;
     top: 75%;
     right: 0%;
-    width: 15%;
+    width: 20%;
     max-height: 0px;
     overflow: hidden;
     transition: max-height .5s;
-    
-    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .sub-menu-wrap.open-menu{
     max-height: 450%;
-    
-    z-index: 1;
 }
 
 .sub-menu{
-    background-color: #e5e5e5;
+    background: #fff;
     padding: 5%;
     margin: 10px;
-    z-index: 1;
 }
 
 .sub-menu-link{
@@ -124,15 +114,13 @@ nav ul li a:hover{
     text-decoration: none;
     color: #525252;
     margin: 5px 0;
-    z-index: 1;
 }
 
 .sub-menu-link p{
     width: 100%;
-    z-index: 1;
 }
 
-.sub-menu-link i{
+.sub-menu-link img{
     width: 18%;
     background: #e5e5e5;
     border-radius: 50%;
@@ -142,7 +130,6 @@ nav ul li a:hover{
 
 .sub-menu-link span{
     font-size: 22px;
-    z-index: 1;
 }
 
 .sub-menu-link:hover span{
@@ -152,7 +139,6 @@ nav ul li a:hover{
 .sub-menu-link:hover {
     font-weight: 600;
 }
-
 
 .page1-bg img{
     height: 100%;
@@ -164,7 +150,7 @@ nav ul li a:hover{
     background-color: #06080a;
     position: relative;
     width: 100%;
-    height: 750px;
+    height: 900px;
     margin-top: -1%;
 }
 .page2{
@@ -201,7 +187,7 @@ nav ul li a:hover{
     background-color: #06080a;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin-top: -1%;
 }
 
@@ -238,7 +224,7 @@ nav ul li a:hover{
     background-color: #06080a;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 1200px;
     margin-top: -1%;
 }
 
@@ -246,7 +232,7 @@ nav ul li a:hover{
     position: absolute;
     padding: 0px 0px 0px 20px;
     width: 80%;
-    height: 50vw;
+    height: 220vw;
     margin-top: -35%;
     margin-left: 150px;
     justify-content: center;
@@ -260,5 +246,66 @@ nav ul li a:hover{
     letter-spacing: 4px;
     margin-top: 1%;
     margin-left: 2%;
-   font-size: 3vw;
+    font-size: 3vw;
+}
+
+.image img{
+    margin-left: 28%;
+    margin-top: -27%;
+   width: 50%;
+   position: absolute;
+   z-index: 1;
+}
+
+.image h1{
+    color:white;
+    letter-spacing: 2px;
+    margin-top: 8.8%;
+    margin-left: 27%;
+    position: absolute;
+    z-index: 1;
+    font-size: 2vw;
+}
+
+.image p{
+    color: white;
+    margin-top: 13%;
+    margin-left: 18%;
+    margin-right: 18%;
+    position: absolute;
+    font-size: 1.8vw;
+    z-index: 1;
+}
+
+.page5-bg{
+    margin-top: -70%;
+}
+
+.page5-bg h1{
+    margin-top: 11.5%;
+}
+
+.page5-bg p{
+    margin-top: 16.4%;
+}
+
+.page6-bg{
+    margin-top: 68%;
+    height: 80%;
+    color: #e6b436;
+}
+
+.page6-bg h1{
+    margin-top: 14.5%;
+}
+
+.page6-bg p{
+    margin-top: 19%;
+}
+
+.page7-bg{
+    background-color: #06080a;
+    position: relative;
+    width: 100%;
+    margin-top: -1%;
 }

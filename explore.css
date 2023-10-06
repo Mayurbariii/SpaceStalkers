@@ -24,12 +24,12 @@
     backdrop-filter: blur(10px);
 }
 
-.logo{
-    width: 50px;
+a .logo{
+    width: 40px;
     height: 45px;
 }
 
-.name{
+a .name{
     height: 50px;
     padding-left: 10px;
 }
@@ -50,6 +50,7 @@
     border: #171616;
     border-radius: 50px;
     color: #5fcb4b;
+    transition: 0.6s;
 }
 
 nav ul{
@@ -61,11 +62,13 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 1s;
 }
 nav ul li .explore{
     padding: 9px 25px;
@@ -182,6 +185,64 @@ nav ul li a:hover{
     height: 300%;
     margin-top: -5%;
 }
+
+.page2-bg h1{
+    color: #e5e5e5;
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 10%;
+    font-size: 4vw;
+    z-index: 1;
+}
+
+.page2-bg h2{
+    color: #e5e5e5;
+    position: absolute;
+    margin-top: 115%;
+    margin-left: 10%;
+    font-size: 2vw;
+    z-index: 1;
+    letter-spacing: 5px;
+    line-height: 1.7;
+}
+
+.page2-bg h3{
+    color: #ffffff;
+    position: absolute;
+    margin-top: 128%;
+    margin-left: 10%;
+    font-size: 1.5vw;
+    z-index: 1;
+    letter-spacing: 3px;
+}
+
+.page2-bg .explore1 button{
+    color: #353431;
+    background:#eeb523;
+    position: absolute;
+    margin-top: 127.9%;
+    margin-left: 17%;
+    font-size: 2vw;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+.page2-bg .explore1 button:hover{
+    border-radius: 50%;
+    font-size: 2.5vw;
+    transition: 1s;
+}
+
+.page2-bg .vrvd1{
+    position: absolute;
+    width: 50%;
+    margin-top: 115%;
+    margin-left: 48%;
+}
+
+
+
 .page2{
     position: absolute;
     padding: 0px 0px 0px 20px;
@@ -293,6 +354,7 @@ nav ul li a:hover{
     height: 100%;
     width: 100%;
     font-family: a;
+    margin-top: 7%;
     color: #fff;
     backdrop-filter: blur(5px);
 }
@@ -419,5 +481,6 @@ nav ul li a:hover{
     width: 100%;
     height: 300%;
     margin-top: -5%;
+    z-index: -1;
 }
 

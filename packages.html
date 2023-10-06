@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="packages.css">
+  <title>Customer Review Slider</title>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="review active">
+      <p>"Great product! I'm very satisfied."</p>
+      <p class="author">- John Doe</p>
+    </div>
+    <div class="review">
+      <p>"Excellent service and fast delivery."</p>
+      <p class="author">- Jane Smith</p>
+    </div>
+    <div class="review">
+      <p>"Highly recommend! Will buy again."</p>
+      <p class="author">- Robert Johnson</p>
+    </div>
+  </div>
+  <button id="prevBtn" onclick="changeSlide(-1)">Previous</button>
+  <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+</div>
+
+<script src="pack.js"></script>
+</body>
+</html>

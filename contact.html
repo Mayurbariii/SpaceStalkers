@@ -59,15 +59,16 @@
             </div>
         </div>
     </nav>
-    <div class="text">
-       
-        </div>
-        <h5 class="text1">Moscow, Russia</h5>
+
+        <h5 class="text1">Australia</h5>
         <h5 class="text2">Washington DC, USA</h5>
         <h5 class="text3">Nashik, India</h5>
-        <i id="i1" class="ri-map-pin-2-fill"></i>
-        <i id="i2" class="ri-map-pin-2-fill"></i>
-        <i id="i3" class="ri-map-pin-2-fill"></i>
+        <a href="about.html"class="icon">
+            <img  id="i1" src="map-pin-2-fill.png"></img></a>
+        <a href="about.html" class="icon">
+            <img  id="i2" src="map-pin-2-fill.png"></img></a>
+        <a href="about.html" class="icon">
+            <img  id="i3" src="map-pin-2-fill.png"></img></a>
         <h2 class="text4">Contacts</h2>
         <div class="text5">
             <h3>Mayur Bari</h3>
@@ -79,16 +80,46 @@
             <h3>Abhishek Jamdhale</h3>
             <h3>Nishant Gour</h3>
         </div>
-    <img src="space3.jpg" class="space">
+        <img src="space3.jpg" class="space">
+
+        <div class="register">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your name" required >
+                <input type="email" id="email" placeholder="Email" required >
+                <input type="text" id="phone" placeholder="Phone no." required >
+                <textarea id="message" rows="4" placeholder="How can we help you?" ></textarea>
+                <button type="submit" >Send</button>
+            </form> 
+        </div>
+    
+</div>
+<script>
+    let subMenu = document.getElementById("subMenu");
+    
+    function togglemenu(){
+        subMenu.classList.toggle("open-menu")
+    }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js" ></script>
     <script>
-        let subMenu = document.getElementById("subMenu");
-        
-        function togglemenu(){
-            subMenu.classList.toggle("open-menu")
+        function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+         Username : "hellospacestalkers.com",
+         Password : "HellooossSS12",
+         To : 'mayurhage17@gmail.com',
+         From : document.getElementbyId("email").value,
+         Subject : "New Contact Form Enquiry",
+         Body : "Name:" + document.getElementById("name").value
+            +"<br> Email:"+ document.getElementById("email").value
+            +"<br> Phone no.:"+ document.getElementById("phone").value
+            +"<br> Message:"+ document.getElementById("message").value
+        }).then(
+        message => alert("Message Sent Succesfully")
+        );
         }
     </script>
-        
-</div>
 </body>
 
 

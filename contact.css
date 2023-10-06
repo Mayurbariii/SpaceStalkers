@@ -45,6 +45,7 @@ nav{
     border: #171616;
     border-radius: 50px;
     color: #5fcb4b;
+    transition: 0.6s;
 }
 
 nav ul{
@@ -56,11 +57,13 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 1s;
 }
 nav ul li .contact{
     padding: 9px 25px;
@@ -157,44 +160,44 @@ nav ul li a:hover{
     position: absolute;
 }
 
-#i1.ri-map-pin-2-fill{
-    font-size: 3vw;
+.icon #i1 {
+    size: 4vw;
     color: red;
     position: absolute;
-    margin-left: 49%;
-    margin-top: 26.5%;
+    margin-left: 61%;
+    margin-top: 63%;
 }
 
-#i2.ri-map-pin-2-fill{
-    font-size: 3.4vw;
+.icon #i2{
+    size: 3.4vw;
     color: red;
     position: absolute;
     margin-left: 41%;
     margin-top: 35.5%;
 }
 
-#i3.ri-map-pin-2-fill{
-    font-size: 3.1vw;
+.icon #i3{
+    size: 3.1vw;
     color: red;
     position: absolute;
-    margin-left: 48.8%;
+    margin-left: 50%;
     margin-top: 54.3%;
 }
 
-#i1.ri-map-pin-2-fill:hover{
-    font-size: 3.6vw;
+.icon #i1:hover{
+    size: 3.6vw;
     cursor: pointer;
     color: #5fcb4b;
 }
 
-#i2.ri-map-pin-2-fill:hover{
-    font-size: 3.6vw;
+.icon #i2:hover{
+    size: 3.6vw;
     cursor: pointer;
     color: #5fcb4b;
 }
 
-#i3.ri-map-pin-2-fill:hover{
-    font-size: 3.6vw;
+.icon #i3:hover{
+    size: 3.6vw;
     cursor: pointer;
     color: #5fcb4b;
 }
@@ -202,8 +205,8 @@ nav ul li a:hover{
 .text1{
     color: white;
     position: absolute;
-    margin-left: 52.5%;
-    margin-top: 27%;
+    margin-left: 65%;
+    margin-top: 60%;
     letter-spacing: 2px;
 }
 
@@ -273,6 +276,59 @@ nav ul li a:hover{
 .space1{
     width: 100%;
    height: auto;
+}
+
+/*----- Contact form-------*/
+
+.register{
+    width: 80%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 10%;
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    height: 80%;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 5% 0;
+    padding: 5%;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 1vw;
+}
+
+form button{
+    padding: 3%;
+    background: #ff5361;
+    color: #fff;
+    font-size: 0.8vw;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 30%;
+    margin: 10% auto 0;
+    border-radius: 8%;
 }
 
 footer {

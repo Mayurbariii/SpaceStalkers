@@ -24,12 +24,12 @@
     backdrop-filter: blur(10px);
 }
 
-.logo{
-    width: 50px;
+a .logo{
+    width: 40px;
     height: 45px;
 }
 
-.name{
+a .name{
     height: 50px;
     padding-left: 10px;
 }
@@ -50,6 +50,7 @@
     border: #171616;
     border-radius: 50px;
     color: #5fcb4b;
+    transition: 0.6s;
 }
 
 nav ul{
@@ -61,11 +62,13 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 1s;
 }
 
 nav ul li a:hover{
