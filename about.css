@@ -140,6 +140,8 @@ a.about{
     font-weight: 600;
 }
 
+
+
 .page1-bg img{
     height: 100%;
     width: 100%;
@@ -164,6 +166,30 @@ a.about{
     align-items: center;
     background-color:#142533 ;
     z-index: 1;
+}
+
+.page2 button{
+    left: 86%;
+    top: 5%;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #e5e0e0;
+    color: #0a3cce;
+    transform: .2s linear;
+    transition: 1s;
+    font-size: medium;
+    font-weight: 200;
+    z-index: 2;
+}
+.page2 button:hover{
+  transform: translateX(5px);
+  transition:.6s ease all ;
+  background-color: #525252;
+  color:#e6b436;
+  font-size: large;
+  cursor: pointer;
 }
 
 .page2 h1{

@@ -190,7 +190,7 @@ nav ul li a:hover{
     color: #e5e5e5;
     position: absolute;
     margin-top: 100%;
-    margin-left: 10%;
+    margin-left: 8%;
     font-size: 4vw;
     z-index: 1;
 }
@@ -198,8 +198,8 @@ nav ul li a:hover{
 .page2-bg h2{
     color: #e5e5e5;
     position: absolute;
-    margin-top: 115%;
-    margin-left: 10%;
+    margin-top: 125%;
+    margin-left: 8%;
     font-size: 2vw;
     z-index: 1;
     letter-spacing: 5px;
@@ -209,8 +209,8 @@ nav ul li a:hover{
 .page2-bg h3{
     color: #ffffff;
     position: absolute;
-    margin-top: 128%;
-    margin-left: 10%;
+    margin-top: 140%;
+    margin-left: 8%;
     font-size: 1.5vw;
     z-index: 1;
     letter-spacing: 3px;
@@ -220,8 +220,8 @@ nav ul li a:hover{
     color: #353431;
     background:#eeb523;
     position: absolute;
-    margin-top: 127.9%;
-    margin-left: 17%;
+    margin-top: 140%;
+    margin-left: 15%;
     font-size: 2vw;
     z-index: 1;
     cursor: pointer;
@@ -239,6 +239,7 @@ nav ul li a:hover{
     width: 50%;
     margin-top: 115%;
     margin-left: 48%;
+    border-radius: 5px;
 }
 
 
@@ -484,3 +485,19 @@ nav ul li a:hover{
     z-index: -1;
 }
 
+.page3-bg h1{
+    color: #e5e5e5;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 8%;
+    font-size: 4vw;
+}
+
+.page3-bg .trainingvd{
+    border: #eeb523;
+    position: absolute;
+    width: 50%;
+    margin-left: 48%;
+    margin-top: 30%;
+    border-radius: 5px;
+}

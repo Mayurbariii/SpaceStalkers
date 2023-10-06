@@ -350,9 +350,10 @@ nav ul li a:hover{
   }
   #page6>h2{
       margin-left: 15vw;
-      font-weight: 100;
-      color: #fff;
+      font-weight: 200;
+      color: #ffe355;
       margin-bottom: 2vw;
+      font-size: 2vw;
   }
   #page6>h1{
       margin-left: 15vw;
