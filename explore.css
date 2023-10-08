@@ -668,3 +668,21 @@ nav ul li a:hover{
     position: absolute;
     border-radius: 5px;
 }
+
+.types .pricing .price1 {
+    margin-top: 76%;
+    margin-left: 14%;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: rgb(145, 220, 87);
+}
+
+.types .pricing .price2 {
+    margin-top: 76%;
+    margin-left: 65%;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: rgb(145, 220, 87);
+}
