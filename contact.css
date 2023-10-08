@@ -206,7 +206,7 @@ nav ul li a:hover{
     color: white;
     position: absolute;
     margin-left: 65%;
-    margin-top: 60%;
+    margin-top: 63%;
     letter-spacing: 2px;
 }
 
@@ -299,7 +299,7 @@ form{
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
-    height: 80%;
+    height: 70%;
     border-radius: 10px;
 }
 
