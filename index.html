@@ -23,17 +23,16 @@
                     <a href="about.html">
                     <img src="Space Stalkers name.png" class="name">
                     </a>
-        <ul>
+           <ul id="sidemenu">
             <li><a class="home" href="index.html">Home</a></li>
             <li><a class="explore" href="explore.html">Explore</a></li>
             <li><a class="info" href="infopage.html">Info</a></li>
             <li><a class="about" href="about.html">About</a> </li>
             <li><a class="contact" href="contact.html">Contact</a></li>
-        </ul>
-        <a href="loginpage.html">
-        <img src="user-fill.png" class="user-pic" onclick="togglemenu()">
-        </a>
-                </nav>
+            <i class="fas fa-bars" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
 <!-- Common -->        
         
            
@@ -252,7 +251,8 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -293,7 +293,16 @@
         function togglemenu(){
             subMenu.classList.toggle("open-menu")
         }
-        </script> 
+    </script> 
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 
 </body>
 <footer>

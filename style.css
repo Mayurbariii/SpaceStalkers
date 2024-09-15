@@ -65,25 +65,6 @@ a .name{
     padding-left: 10px;
 }
 
-.user-pic{
-    padding: 9px 9px;
-    border-radius: 40px;
-    background-color: #5fcb4b;
-}
-
-.user-pic:hover{
-    width: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 30px;
-    padding: 10px 10px;
-    background-color: white;
-    border: #171616;
-    border-radius: 50px;
-    color: #5fcb4b;
-    transition: 0.6s;
-}
-
 nav ul{
     width: 100%;
     text-align: right;
@@ -242,21 +223,6 @@ nav ul li a:hover{
       backdrop-filter: blur (5px);
   }
 
-  .bottom-page1 .astronaut img{
-    position: absolute;
-    z-index: 1;
-    width: 20%;
-    margin-left: 70%;
-    margin-top: -7%;
-  }
-
-  .bottom-page1 .astronaut img:hover{
-    width: 24%;
-    margin-left: 65%;
-    margin-top: -15%;
-    transform: rotate3d(180deg);
-    transition: 1s;
-  }
 
   .bottom-page1 h3{
     position: absolute;
@@ -976,4 +942,59 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
+}
+
+@media only screen and (max-width:600px) {
+    nav{
+        min-height: 40px;
+    }
+    nav>a>img.logo{
+        height: 40px;
+        width: 40px;
+    }
+    nav>a>img.name{
+        margin-left: -10;
+        justify-content: left;
+        width: 200px;
+    }
+    nav>ul{
+        display: none;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }    
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .bottom-page1 h1{
+        font-size: 20px;
+        letter-spacing: 10px;
+        font-weight: 500;
+        margin-top: 30%;
+    }
+    .bottom-page1 h2{
+        height: 20px;
+        font-size: 10px;
+        letter-spacing: 7px;
+        font-weight: 300;
+    }
 }
